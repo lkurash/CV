@@ -1,0 +1,176 @@
+@media (max-width: 1165px) {
+  .aside {
+    left: 3px;
+    width: 8%;
+    position: relative;
+  }
+
+  .button-span {
+    display: none;
+  }
+
+  .nav-button {
+    width: 50px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 15px;
+  }
+
+  h4 {
+    font-size: 12px;
+  }
+
+  li {
+    font-size: 11px;
+  }
+
+  .page {
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .cv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    height: max-content;
+    margin-right: 5px;
+  }
+
+  .photo-background {
+    height: 80px;
+  }
+  .profile-photo,
+  .profile-photo img {
+    height: 100px;
+    width: 110px;
+  }
+
+  .col-1 {
+    width: 90%;
+    margin-left: 10px;
+  }
+
+  .col-2{
+    margin-bottom: 10px;
+  }
+  .aboutme-details{
+    max-width: 200px;
+    font-size: 13px;
+  }
+  .cv-details{
+    width: 80%;
+  }
+}
+
+@media (max-width: 550px) {
+  h1 {
+    width: 100px;
+    font-size: 23px;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+
+  h3 {
+    font-size: 13px;
+  }
+
+  h4 {
+    font-size: 10px;
+  }
+
+  .page {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .aside {
+    left: 0;
+    margin: 0;
+  }
+
+  .nav-button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .nav-img {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+  }
+
+  .cv {
+    width: 95%;
+    height: max-content;
+  }
+
+  .cv-details {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .cv-details p {
+    font-size: 9px;
+  }
+
+  .cv-section {
+    width: 90%;
+    height: 100%;
+    margin-top: 3px;
+  }
+
+  .details-list {
+    margin-top: 2px;
+  }
+
+  .details-list li {
+    font-size: 8.5px;
+  }
+
+  .col-2 {
+    margin-top: 40px;
+    width: 96%;
+    height: 100%;
+    /* padding-bottom: 50px; */
+  }
+
+  .col-1 {
+    margin: 10px;
+    width: 85%;
+  }
+
+  .aboutme-details{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 11px;
+  }
+
+  .contact-list li {
+    margin-bottom: 5px;
+    font-size: 8px;
+    /* margin-left: 4%; */
+  }
+
+  .footer {
+    height: 20px;
+  }
+  .footer p{
+    font-size: 10px;
+  }
+}
