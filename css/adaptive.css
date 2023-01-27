@@ -39,7 +39,8 @@
     height: 100%;
   }
 
-  .cv {
+  .cv,
+  .advanced {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -51,6 +52,7 @@
   .photo-background {
     height: 80px;
   }
+
   .profile-photo,
   .profile-photo img {
     height: 100px;
@@ -62,16 +64,65 @@
     margin-left: 10px;
   }
 
-  .col-2{
+  .col-2 {
     margin-bottom: 10px;
   }
-  .aboutme-details{
+
+  .aboutme-details {
     max-width: 200px;
     font-size: 13px;
   }
-  .cv-details{
+
+  .cv-details {
     width: 80%;
   }
+
+  .container {
+    width: 450px;
+  }
+
+  .item img {
+    width: 450px;
+  }
+
+  .facts-list {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .list-item-facts {
+    width: 250px;
+  }
+
+}
+
+@media (max-width: 740px) {
+  .container {
+    width: 380px;
+    height: 310px;
+  }
+
+  .item img {
+    width: 350px;
+    height: 300px;
+  }
+
+  .route-img {
+    width: 17px;
+    height: 17px;
+  }
+
+  .route {
+    width: 15px;
+    height: 310px;
+    justify-content: center;
+  }
+
+  .link-project {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+
 }
 
 @media (max-width: 550px) {
@@ -102,11 +153,62 @@
   .aside {
     left: 0;
     margin: 0;
+    position: absolute;
+    min-width: 85px;
+    z-index: 999999;
+  }
+
+  .gamburger-menu {
+    display: block;
+    position: absolute;
+    margin-left: 3px;
+    cursor: pointer;
+  }
+
+  .nav-block {
+    display: none;
+  }
+
+  #checkbox-menu:checked~* .nav-block {
+    display: block;
+  }
+
+  #checkbox-menu:checked~* .nav-block {
+    background-color: rgb(199, 199, 199);
+  }
+
+  .nav-block {
+    margin-top: 1px;
+    height: 100%;
+    padding-top: 55px;
+  }
+
+  .aside-nav {
+    height: 100%;
+  }
+
+  .aside-img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .button-span {
+    display: block;
+    font-size: 13px;
+    margin-left: 5px;
+    height: 20px;
+    margin-top: 5px;
   }
 
   .nav-button {
-    width: 100%;
-    justify-content: center;
+    width: 90%;
+    height: 30px;
+    margin-left: 3px;
+    margin-bottom: 10px;
+  }
+
+  .nav-button:hover {
+    border-radius: 50px;
   }
 
   .nav-img {
@@ -115,8 +217,10 @@
     margin: 0;
   }
 
-  .cv {
-    width: 95%;
+  .cv,
+  .advanced {
+    width: 100%;
+    margin: 0 auto;
     height: max-content;
   }
 
@@ -147,7 +251,6 @@
     margin-top: 40px;
     width: 96%;
     height: 100%;
-    /* padding-bottom: 50px; */
   }
 
   .col-1 {
@@ -155,7 +258,7 @@
     width: 85%;
   }
 
-  .aboutme-details{
+  .aboutme-details {
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 11px;
@@ -164,13 +267,63 @@
   .contact-list li {
     margin-bottom: 5px;
     font-size: 8px;
-    /* margin-left: 4%; */
   }
 
   .footer {
     height: 20px;
   }
-  .footer p{
+
+  .footer p {
     font-size: 10px;
+  }
+
+  .container {
+    width: 350px;
+    height: 280px;
+  }
+
+  .route {
+    width: 15px;
+    justify-content: center;
+  }
+
+  .route-img {
+    width: 17px;
+    height: 17px;
+  }
+
+  #left {
+    margin-left: 3px;
+  }
+
+  #right {
+    margin-right: 3px;
+  }
+
+  .item img {
+    width: 320px;
+    height: 270px;
+  }
+
+  .link-my-project {
+    font-size: 12px;
+    margin-left: 10px;
+  }
+
+  .facts-list {
+    width: 250px;
+    margin-bottom: 20px;
+  }
+
+  .list-item-facts {
+    width: 230px;
+  }
+
+  .user-datails h4 {
+    font-size: 13px;
+  }
+
+  .user-datails p {
+    font-size: 12px;
   }
 }

@@ -6,177 +6,287 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/common.css"/>
   <link rel="stylesheet" href="css/cv.css"/>
+  <link rel="stylesheet" href="css/advanced-task.css"/>
   <link rel="stylesheet" href="css/adaptive.css"/>
+  <script type="module" src="js/index.js" defer></script>
   <title>CV</title>
 </head>
 <body>
   <div class="page">
     <aside class="aside">
-      <div class="aside-nav">
+      <input id="checkbox-menu" type="checkbox"/>
+      <label for="checkbox-menu">
+        <img src="img/menu_icon.png" alt="Menu" class="gamburger-menu" id="gamburger-menu"/>
+      </label>
+      <div class="aside-nav" id="aside-nav">
         <nav class="nav-block">
           <div>
-            <div class="nav-button">
-              <div class="aside-img">
-                <img src="img/aside/profile.png" alt="profile-icon" class="nav-img"/>
+            <div class="nav-button" id="button-cv">
+              <div class="aside-img" id="button-cv">
+                <img src="img/aside/cv.png" alt="profile-icon" class="nav-img" id="button-cv"/>
               </div>
-              <div class="button-span">
-                <span>
-                  Profile
+              <div class="button-span" id="button-cv">
+                <span id="button-cv">
+                  CV
                 </span>
               </div>
             </div>
           </div>
           <div>
-            <div class="nav-button">
-              <div class="aside-img">
-                <img src="img/aside/media.png" alt="media-icon" class="nav-img"/>
+            <div class="nav-button" id="button-advanced">
+              <div class="aside-img" id="button-advanced">
+                <img src="img/aside/adv.png" alt="media-icon" class="nav-img" id="button-advanced"/>
               </div>
-              <span class="button-span media">
-                Media
+              <span class="button-span media" id="button-advanced">
+                Task
               </span>
             </div>
           </div>
         </nav>
       </div>
     </aside>
-    <main class="cv">
-      <!-- <div class="main-content"> -->
-        <header class="header">
-          <div class="photo-background">
-            <div class="profile-photo">
-              <img src="img/photo_user.JPG" alt="profile-photo"/>
+    <main class="cv" id="cv">
+      <header class="header">
+        <div class="photo-background">
+          <div class="profile-photo">
+            <img src="img/photo_user.JPG" alt="profile-photo"/>
+          </div>
+        </div>
+      </header>
+      <section class="main">
+        <section class="wrapper-col-1">
+          <div class="col-1">
+            <div class="cv-section">
+              <h1 class="name">Lizaveta Kurash</h1>
+              <div class="position">
+                <h2>JavaScript developer</h2>
+              </div>
+            </div>
+            <div class="cv-section">
+              <h3>About Me</h3>
+              <p class="aboutme-details"> I like JavaScript and a quality product. </p>
+            </div>
+            <div class="cv-section">
+              <h3>Contact</h3>
+              <div>
+                <ul class="contact-list">
+                  <li class="phone">
+                    <div class="contact-details">
+                      <img src="img/main/phone_icon.png" alt="phone_icon" class="contact-img"/>
+                      +3725-762-74-65
+                    </div>
+                  </li>
+                  <li class="mail">
+                    <div class="contact-details">
+                      <img src="img/main/mail_icon.png" alt="mail_icon" class="contact-img"/>
+                      <a href="mailto:kurash.lizaveta@gmail.com">
+                        kurash.lizaveta@gmail.com
+                      </a>
+                    </div>
+                  </li>
+                  <li class="link">
+                    <div class="contact-details">
+                      <img src="img/main/linkedin_icon.png" alt="linkedin_icon" class="contact-img"/>
+                      <a href="https://www.linkedin.com/in/lizaveta-kurash">
+                        /lizaveta-kurash
+                      </a>
+                    </div>
+                  </li>
+                  <li class="git">
+                    <div class="contact-details">
+                      <img src="img/main/github_icon.png" alt="git_icon" class="contact-img"/>
+                      <a href="https://github.com/lkurash">
+                        /lkurash
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="cv-section">
+              <h3>Education</h3>
+              <div class="cv-details">
+                <h4>JAVASCRIPT</h4>
+                <p>Jun 2022 - Sep 2022</p>
+                <p>Educational Center for
+                  Programming and High Tech
+                  (IT-Academy)
+                </p>
+              </div>
+              <div class="cv-details">
+                <h4>SOFTWARE TESTING</h4>
+                <p>Jul 2021 - Sep 2021</p>
+                <p>Educational Center for
+                  Programming and High Tech
+                  (IT-Academy)
+                </p>
+              </div>
             </div>
           </div>
-        </header>
-        <section class="main">
-          <section class="wrapper-col-1">
-            <div class="col-1">
-              <div class="cv-section">
-                <h1 class="name">Lizaveta Kurash</h1>
-                <div class="position">
-                  <h2>JavaScript developer</h2>
-                </div>
-              </div>
-              <div class="cv-section">
-                <h3>About Me</h3>
-                <p class="aboutme-details"> I like JavaScript and a quality product. </p>
-              </div>
-              <div class="cv-section">
-                <h3>Contact</h3>
-                <div>
-                  <ul class="contact-list">
-                    <li class="phone">
-                      <div class="contact-details">
-                        <img src="img/main/phone_icon.png" alt="phone_icon" class="contact-img"/>
-                        +3725-762-74-65
-                      </div>
-                    </li>
-                    <li class="mail">
-                      <div class="contact-details">
-                        <img src="img/main/mail_icon.png" alt="mail_icon" class="contact-img"/>
-                        <a href="mailto:kurash.lizaveta@gmail.com">
-                          kurash.lizaveta@gmail.com
-                        </a>
-                      </div>
-                    </li>
-                    <li class="link">
-                      <div class="contact-details">
-                        <img src="img/main/linkedin_icon.png" alt="linkedin_icon" class="contact-img"/>
-                        <a href="https://www.linkedin.com/in/lizaveta-kurash">
-                          /lizaveta-kurash
-                        </a>
-                      </div>
-                    </li>
-                    <li class="git">
-                      <div class="contact-details">
-                        <img src="img/main/github_icon.png" alt="git_icon" class="contact-img"/>
-                        <a href="https://github.com/lkurash">
-                          /lkurash
-                        </a>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="cv-section">
-                <h3>Education</h3>
-                <div class="cv-details">
-                  <h4>JAVASCRIPT</h4>
-                  <p>Jun 2022 - Sep 2022</p>
-                  <p>Educational Center for
-                    Programming and High Tech
-                    (IT-Academy)
-                  </p>
-                </div>
-                <div class="cv-details">
-                  <h4>SOFTWARE TESTING</h4>
-                  <p>Jul 2021 - Sep 2021</p>
-                  <p>Educational Center for
-                    Programming and High Tech
-                    (IT-Academy)
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section class="wrapper-col-2">
-            <div class="col-2">
-              <div class="cv-section">
-                <h3>Skills</h3>
-                  <ul class="details-list skills">
-                    <li>JavaScript</li>
-                    <li>React</li>
-                    <li>Redux</li>
-                    <li>React Router</li>
-                    <li>HTML, CSS</li>
-                    <li>Jest</li>
-                    <li>GitHub</li>
-                    <li>Figma</li>
-                    <li>Manual testing</li>
-                    <li>Bug tracking system: Jira</li>
-                    <li>Tools:
-                      <span> TestRail, Dev Tools, Postman, Swagger UI, ShareX, Virtual box,
-                            Fiddler, Kibana, Azure, DBeaver, ETCD, Octopus, Confluence
-                      </span>
-                    </li>
-                  </ul>
-              </div>
-              <div class="cv-section">
-                <h3>Experience</h3>
-                <div class="cv-details">
-                  <p>IT-Academy</p>
-                  <p>JavaScript Developer</p>
-                  <p>Jun 2022 - Sep 2022</p>
-                </div>
-                <div>
-                  <ul class="details-list">
-                    <li>Learning JavaScript</li>
-                    <li>Creating web-applications</li>
-                    <li>Creating Applications with Canvas</li>
-                    <li>Creating a meal generation app</li>
-                    <li>Graduation project: game "Snake"</li>
-                  </ul>
-                </div>
-                <div class="cv-details">
-                  <p>Wargaming</p>
-                  <p>QA Engineer</p>
-                  <p>Dec 2021 - May 2022</p>
-                </div>
-                  <ul class="details-list">
-                    <li>Web-application testing</li>
-                    <li>Api testing</li>
-                    <li>Requirements analysis</li>
-                    <li>Writing test documentation: check-list, test-cases</li>
-                    <li>View logs ( Kibana, Windows )</li>
-                    <li>Working with the database</li>
-                    <li>Participation in SCRUM</li>
-                    <li>Estimation time for testing</li>
-                    <li>Communication with PM, BA</li>
-                  </ul>
-              </div>
-            </div>
-          </section>
         </section>
+        <section class="wrapper-col-2">
+          <div class="col-2">
+            <div class="cv-section">
+              <h3>Skills</h3>
+                <ul class="details-list skills">
+                  <li>JavaScript</li>
+                  <li>React</li>
+                  <li>Redux</li>
+                  <li>React Router</li>
+                  <li>HTML, CSS</li>
+                  <li>Jest</li>
+                  <li>GitHub</li>
+                  <li>Figma</li>
+                  <li>Manual testing</li>
+                  <li>Bug tracking system: Jira</li>
+                  <li>Tools:
+                    <span> TestRail, Dev Tools, Postman, Swagger UI, ShareX, Virtual box,
+                          Fiddler, Kibana, Azure, DBeaver, ETCD, Octopus, Confluence
+                    </span>
+                  </li>
+                </ul>
+            </div>
+            <div class="cv-section">
+              <h3>Experience</h3>
+              <div class="cv-details">
+                <p>IT-Academy</p>
+                <p>JavaScript Developer</p>
+                <p>Jun 2022 - Sep 2022</p>
+              </div>
+              <div>
+                <ul class="details-list">
+                  <li>Learning JavaScript</li>
+                  <li>Creating web-applications</li>
+                  <li>Creating Applications with Canvas</li>
+                  <li>Creating a meal generation app</li>
+                  <li>Graduation project: game "Snake"</li>
+                </ul>
+              </div>
+              <div class="cv-details">
+                <p>Wargaming</p>
+                <p>QA Engineer</p>
+                <p>Dec 2021 - May 2022</p>
+              </div>
+                <ul class="details-list">
+                  <li>Web-application testing</li>
+                  <li>Api testing</li>
+                  <li>Requirements analysis</li>
+                  <li>Writing test documentation: check-list, test-cases</li>
+                  <li>View logs ( Kibana, Windows )</li>
+                  <li>Working with the database</li>
+                  <li>Participation in SCRUM</li>
+                  <li>Estimation time for testing</li>
+                  <li>Communication with PM, BA</li>
+                </ul>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+    <main class="advanced" id="advanced">
+      <section class="main">
+        <div class="wrapper">
+          <section class="wrapper-col-projects">
+            <div class="top">
+              <img src="img/photo_user.JPG" alt="Profile photo" class="user-photo"/>
+              <div class="user-datails">
+                <h4>Lizaveta Kurash</h4>
+                <p>My projects</p>
+              </div>
+            </div>
+              <div class="content" onmousedown="return false">
+                <div class="container">
+                  <div class="route" id="left">
+                    <img src="img/slider/left_icon.png" alt="Left" class="route-img" id="left"/>
+                  </div>
+                  <div class="wrapper-slider" id="wrapper">
+                    <div class="slider-content" id="slider">
+                      <div data-pos="0px" class="item notactive">
+                        <a href="https://lkurash.github.io/GameSnake/">
+                          <img src="img/slider/Snake.png" width="500px" height="350px"/>
+                        </a>
+                      </div>
+                      <div data-pos="-500px" class="item notactive">
+                        <a href="https://lkurash.github.io/Game-X-0/">
+                          <img src="img/slider/XO.png" width="500px" height="350px"/>
+                        </a>
+                      </div>
+                      <div data-pos="-1000px" class="item notactive">
+                        <a href="https://lkurash.github.io/KeyBoard/">
+                          <img src="img/slider/Keyboard.png" width="500px" height="350px"/>
+                        </a>
+                      </div>
+                      <div data-pos="-1500px" class="item notactive">
+                        <a href="https://lkurash.github.io/MealGenerator/">
+                          <img src="img/slider/Meal.png" width="500px" height="350px"/>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="route" id="right">
+                    <img src="img/slider/right_icon.png" alt="Right" class="route-img" id="right"/>
+                  </div>
+                </div>
+                <h4>Projects:</h4>
+                <div class="links">
+                  <p class="link-my-project item1" id="0">Game: Snake</p>
+                  <p class="link-my-project" id="1">Game: X:O</p>
+                  <p class="link-my-project" id="2">KeyBoard</p>
+                  <p class="link-my-project" id="3">Meal Generator</p>
+                </div>
+              </div>
+          </section>
+          <section class="wrapper-col-facts">
+            <div class="border">
+              <div class="top">
+                <img src="img/photo_user.JPG" alt="Profile photo" class="user-photo"/>
+                <div class="user-datails">
+                  <h4>Lizaveta Kurash</h4>
+                  <p>Facts about me</p>
+                </div>
+              </div>
+              <div class="menu" id="button-menu">
+              <div>
+                <img src="img/menu_icon.png" alt="menu" class="menu-img" id="button-menu"/>
+              </div>
+              <div class="wrapper-menu" id="menu">
+                <div class="list-menu">
+                  <div class="menu-details">
+                    <label class="select-topic" id="choose-all">All facts</label>
+                  </div>
+                  <div class="menu-details">
+                    <label class="select-topic" id="choose-work">About work</label>
+                  </div>
+                  <div class="menu-details">
+                    <label class="select-topic" id="choose-me">About me</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="content facts">
+              <div class="facts">
+                <ul class="facts-list" id="facts-list">
+                  <div class="list-item-facts" id="work">
+                    <li>My goal is to work as a JavaScript developer</li>
+                  </div>
+                  <div class="list-item-facts" id="me">
+                    <li>I like learning new things</li>
+                  </div>
+                  <div class="list-item-facts" id="me">
+                    <li>My hobby is sports</li>
+                  </div>
+                  <div class="list-item-facts" id="work">
+                    <li>I worked as a QA in Wargaming</li>
+                  </div>
+                  <div class="list-item-facts" id="work">
+                    <li>I worked as a lawyer for 5 years</li>
+                  </div>
+                </ul>
+               </div>
+              </div>
+            </div>
+          </section>
+        </div>
     </main>
   </div>
   <footer class="footer">

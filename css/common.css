@@ -64,7 +64,7 @@ a {
   padding: 0;
   display: flex;
   justify-content: center;
-  width: 53%;
+  width: 45%;
   height: 100%;
 }
 
@@ -76,12 +76,24 @@ a {
   margin-right: 10px;
 }
 
+#checkbox-menu {
+  display: none;
+}
+
+.gamburger-menu {
+  width: 20px;
+  height: 20px;
+  display: none;
+}
+
 .nav-block {
   margin-top: 20px;
 }
 
 .nav-button {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 157px;
   height: 50px;
   cursor: pointer;
@@ -90,7 +102,10 @@ a {
 .nav-img {
   height: 26px;
   width: 26px;
-  margin-left: 12px;
+}
+
+.button-span {
+  width: 100px;
 }
 
 .aside-img {
