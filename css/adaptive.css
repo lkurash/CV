@@ -182,6 +182,7 @@
     margin-top: 1px;
     height: 100vh;
     padding-top: 55px;
+    z-index: 999999;
   }
 
   .aside-nav {
