@@ -1,0 +1,136 @@
+:root {
+  --indent: 10px;
+  --imgcontact: 20px;
+}
+
+.cv {
+  width: 100%;
+  height: max-content;
+  border: 0.1px solid black;
+  background-color: rgba(242, 232, 232, 0.199);
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: max-content;
+}
+
+.photo-background {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  height: 90px;
+  margin-top: 1px;
+  background-color: rgb(234, 234, 234);
+}
+
+.profile-photo {
+  display: block;
+  z-index: 99999999;
+  width: 130px;
+  height: 120px;
+  margin: 0 auto;
+  margin-top: 16px;
+  border-radius: 100px;
+  background-color: antiquewhite;
+}
+
+.profile-photo img {
+  width: 130px;
+  height: 120px;
+  border-radius: 100px;
+}
+
+.wrapper-col-1,
+.wrapper-col-2 {
+  flex-basis: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.position {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.aboutme-details {
+  font-size: 15px;
+  margin-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  max-width: 260px;
+}
+
+.contact-list {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  list-style-type: none;
+}
+
+.contact-list li {
+  list-style-type: none;
+  margin-left: 10px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.contact-details {
+  display: flex;
+  align-items: center;
+}
+
+.contact-img {
+  width: var(--imgcontact);
+  height: var(--imgcontact);
+  margin-right: 10px;
+}
+
+.cv-details {
+  width: 55%;
+  padding-bottom: 5px;
+  padding-left: 3%;
+  margin-top: 15px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.col-1 {
+  margin-left: 30px;
+  margin-top: 40px;
+}
+
+.col-2 {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 90%;
+  height: max-content;
+  margin-top: 55px;
+  padding: 1% 1% 5% 1%;
+  margin-bottom: 20px;
+}
+
+.cv-section {
+  width: 100%;
+  margin-top: var(--indent);
+  margin-left: var(--indent);
+}
+
+.details-list {
+  font-size: 11px;
+}
+
+.skills {
+  margin-top: var(--indent);
+  font-size: 13px;
+  font-weight: 600
+}
+
+.details-list span {
+  font-weight: 400;
+}
