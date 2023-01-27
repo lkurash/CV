@@ -283,7 +283,8 @@
   }
 
   .route {
-    width: 15px;
+    width: 20px;
+    height: 270px;
     justify-content: center;
   }
 
